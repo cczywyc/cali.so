@@ -4,12 +4,12 @@ import { motion } from 'framer-motion'
 import Image from 'next/image'
 import React from 'react'
 
-import image5 from '~/assets/highlights/highlight-yintai.jpeg'
 import image1 from '~/assets/highlights/highlight-erhai.jpeg'
 import image3 from '~/assets/highlights/highlight-jichang.jpeg'
-import image6 from '~/assets/highlights/highlight-yunnan.jpeg'
-import image2 from '~/assets/highlights/highlight-shanghai.jpeg'
 import image4 from '~/assets/highlights/highlight-luguhu.jpeg'
+import image2 from '~/assets/highlights/highlight-shanghai.jpeg'
+import image5 from '~/assets/highlights/highlight-yintai.jpeg'
+import image6 from '~/assets/highlights/highlight-yunnan.jpeg'
 
 const images = [image1, image2, image3, image4, image5, image6]
 const alts = [
