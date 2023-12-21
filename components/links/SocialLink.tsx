@@ -6,13 +6,11 @@ import React from 'react'
 
 import {
   AtomIcon,
-  BilibiliIcon,
   GitHubIcon,
   type IconProps,
   MailIcon,
-  TelegramIcon,
   TwitterIcon,
-  YouTubeIcon,
+  ZhihuIcon,
 } from '~/assets'
 import { Tooltip } from '~/components/ui/Tooltip'
 
@@ -20,11 +18,9 @@ type IconType = (props: IconProps) => JSX.Element
 type Platform =
   | 'github'
   | 'twitter'
-  | 'youtube'
-  | 'telegram'
-  | 'bilibili'
   | 'mail'
   | 'rss'
+  | 'zhihu'
 type PlatformInfo = {
   icon: IconType
   platform: Platform
@@ -37,21 +33,7 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     platform: 'twitter',
     label: 'Twitter',
   },
-  '((?:youtu.be)|(?:youtube.com))': {
-    icon: YouTubeIcon,
-    platform: 'youtube',
-    label: 'YouTube',
-  },
-  '((?:t.me)|(?:telegram.com))': {
-    icon: TelegramIcon,
-    platform: 'telegram',
-    label: 'Telegram',
-  },
-  '(?:bilibili.com)': {
-    icon: BilibiliIcon,
-    platform: 'bilibili',
-    label: '哔哩哔哩',
-  },
+  '(?:zhihu.com)': { icon: ZhihuIcon, platform: 'zhihu', label: 'zhihu' },
   '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
   '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
 }

@@ -54,7 +54,7 @@ export default defineType({
         source: 'title',
         maxLength: 96,
       },
-      validation: (Rule) => Rule.required(),
+      "validation": (Rule) => Rule.required(),
     }),
     defineField({
       name: 'categories',

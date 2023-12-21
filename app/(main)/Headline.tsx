@@ -9,7 +9,7 @@ import { SocialLink } from '~/components/links/SocialLink'
 function Gopher() {
   return (
     <span className="group">
-      <span className="font-mono">&lt;</span>Gopher
+      <span className="font-mono">&lt;</span>CurdBoy
       <span className="font-mono">/&gt;</span>
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
@@ -25,7 +25,7 @@ function CurdBoy() {
         <span className="absolute -bottom-0.5 -left-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -right-0.5 -top-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
       </span>
-      curd boy
+      Gopher
     </span>
   )
 }
@@ -79,7 +79,7 @@ export function Headline() {
         }}
       >
         <Balancer>
-          我叫王有成，网名叫 cczywyc，一个爱折腾的人。
+          世界上只有一种真正的英雄主义，那就是在认清生活的真相后依然热爱生活。
         </Balancer>
       </motion.p>
       <motion.div
@@ -100,24 +100,14 @@ export function Headline() {
           platform="twitter"
         />
         <SocialLink
-          href="https://cali.so/youtube"
-          aria-label="我的 YouTube"
-          platform="youtube"
-        />
-        <SocialLink
-          href="https://cali.so/bilibili"
-          aria-label="我的 Bilibili"
-          platform="bilibili"
-        />
-        <SocialLink
           href="https://cczywyc.com/github"
           aria-label="我的 GitHub"
           platform="github"
         />
         <SocialLink
-          href="https://cali.so/tg"
-          aria-label="我的 Telegram"
-          platform="telegram"
+          href="https://cczywyc.com/zhihu"
+          aria-label="我的知乎"
+          platform="zhihu"
         />
         <SocialLink href="/feed.xml" platform="rss" aria-label="RSS 订阅" />
         <SocialLink
