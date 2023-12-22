@@ -105,6 +105,11 @@ export function Headline() {
           platform="github"
         />
         <SocialLink
+          href="https://cczywyc.com/tg"
+          aria-label="我的 Telegram"
+          platform="telegram"
+        />
+        <SocialLink
           href="https://cczywyc.com/zhihu"
           aria-label="我的知乎"
           platform="zhihu"

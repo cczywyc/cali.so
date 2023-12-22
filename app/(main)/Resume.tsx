@@ -15,7 +15,7 @@ type Resume = {
 const resume: Resume[] = [
   {
     company: '杭州顺网科技股份有限公司',
-    title: '软件工程师·后端开发',
+    title: '软件工程师 · 后端开发',
     logo: swLogo,
     start: '2023',
     end: {
@@ -25,7 +25,7 @@ const resume: Resume[] = [
   },
   {
     company: '浙江齐治科技股份有限公司',
-    title: '软件工程师·后端开发',
+    title: '软件工程师 · 后端开发',
     logo: qzLogo,
     start: '2020',
     end: '2023',

@@ -9,6 +9,7 @@ import {
   GitHubIcon,
   type IconProps,
   MailIcon,
+  TelegramIcon,
   TwitterIcon,
   ZhihuIcon,
 } from '~/assets'
@@ -18,6 +19,7 @@ type IconType = (props: IconProps) => JSX.Element
 type Platform =
   | 'github'
   | 'twitter'
+  | 'telegram'
   | 'mail'
   | 'rss'
   | 'zhihu'
@@ -33,7 +35,12 @@ const iconMapper: { [key: string]: PlatformInfo } = {
     platform: 'twitter',
     label: 'Twitter',
   },
-  '(?:zhihu.com)': { icon: ZhihuIcon, platform: 'zhihu', label: 'zhihu' },
+  '((?:t.me)|(?:telegram.com))': {
+    icon: TelegramIcon,
+    platform: 'telegram',
+    label: 'Telegram',
+  },
+  '(?:zhihu.com)': { icon: ZhihuIcon, platform: 'zhihu', label: '知乎' },
   '(?:mailto:)': { icon: MailIcon, platform: 'mail', label: '邮箱地址' },
   '(?:feed.xml)': { icon: AtomIcon, platform: 'rss', label: 'RSS 订阅' },
 }

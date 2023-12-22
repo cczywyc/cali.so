@@ -44,41 +44,27 @@ export default function Layout({
               />
               <Text className="text-center">
                 <Link
-                  href="https://cali.so"
+                  href="https://cczywyc.com"
                   className="text-zinc-700 underline"
                 >
-                  <strong>Cali Castle</strong>
+                  <strong>cczywyc</strong>
                 </Link>
                 <br />
-                开发者、设计师、细节控、创始人
+                CurdBoy、Gopher、爱折腾
               </Text>
               <Text className="text-center">
                 <Link
-                  href="https://cali.so/twitter"
+                  href="https://cczywyc.com/twitter"
                   className="text-xs text-zinc-600 underline"
                 >
                   Twitter
                 </Link>{' '}
                 |&nbsp;
                 <Link
-                  href="https://cali.so/youtube"
-                  className="text-xs text-zinc-600 underline"
-                >
-                  YouTube
-                </Link>{' '}
-                |&nbsp;
-                <Link
-                  href="https://cali.so/github"
+                  href="https://cczywyc.com/github"
                   className="text-xs text-zinc-600 underline"
                 >
                   GitHub
-                </Link>{' '}
-                |&nbsp;
-                <Link
-                  href="https://cali.so/bilibili"
-                  className="text-xs text-zinc-600 underline"
-                >
-                  哔哩哔哩
                 </Link>
               </Text>
             </Section>
