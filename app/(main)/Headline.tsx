@@ -6,19 +6,37 @@ import Balancer from 'react-wrap-balancer'
 import { SparkleIcon, UserSecurityIcon } from '~/assets'
 import { SocialLink } from '~/components/links/SocialLink'
 
-function Gopher() {
+const stype = {
+    fontFamily: 'monospace',
+    fontSize: '40px'
+}
+
+const itemStype = {
+    fontFamily: 'monospace',
+    fontSize: '35px'
+}
+
+function Hello() {
+    return (
+        <span className="group" style={stype}>
+            Hi there, I'm cczywyc👋
+        </span>
+    )
+}
+
+function CurdBoy() {
   return (
-    <span className="group">
+    <span className="group" style={itemStype}>
       <span className="font-mono">&lt;</span>CurdBoy
-      <span className="font-mono">/&gt;</span>
+      <span className="font-mono">&nbsp;/&gt;</span>
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
     </span>
   )
 }
 
-function CurdBoy() {
+function Gopher() {
   return (
-    <span className="group relative rounded-2xl bg-black/5 p-1 dark:bg-white/5">
+    <span className="group relative rounded-2xl bg-black/5 p-1 dark:bg-white/5" style={itemStype}>
       <span className="pointer-events-none absolute inset-0 border border-lime-700/90 opacity-70 group-hover:border-dashed group-hover:opacity-100 dark:border-lime-400/90">
         <span className="absolute -left-0.5 -top-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -bottom-0.5 -right-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
@@ -32,7 +50,7 @@ function CurdBoy() {
 
 function OCD() {
   return (
-    <span className="group">
+    <span className="group" style={itemStype}>
       <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
       <span>🐳🐳🐳</span>
     </span>
@@ -41,10 +59,13 @@ function OCD() {
 
 function Tosser() {
   return (
-    <span className="group">
+    <span className="group" style={itemStype}>
       <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>爱折腾</span>
+      <span>Focus&nbsp;&nbsp;</span>
+      <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
+      <span>Passion</span>
     </span>
+
   )
 }
 
@@ -62,9 +83,11 @@ export function Headline() {
           duration: 0.3,
         }}
       >
-        <Gopher />，<CurdBoy />，
+        <Hello />
         <br />
-        <OCD />，<Tosser />
+        <CurdBoy /><Gopher />&nbsp;<OCD />
+        <br />
+        <Tosser />
       </motion.h1>
       <motion.p
         className="mt-6 text-base text-zinc-600 dark:text-zinc-400"
@@ -79,7 +102,7 @@ export function Headline() {
         }}
       >
         <Balancer>
-          世界上只有一种真正的英雄主义，那就是在认清生活的真相后依然热爱生活。
+          唯有热爱可抵岁月漫长
         </Balancer>
       </motion.p>
       <motion.div
