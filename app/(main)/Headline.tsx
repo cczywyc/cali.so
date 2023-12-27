@@ -19,7 +19,7 @@ const itemStype = {
 function Hello() {
     return (
         <span className="group" style={stype}>
-            Hi there, I'm cczywyc👋
+            Hi there, I&apos;m cczywyc👋
         </span>
     )
 }
