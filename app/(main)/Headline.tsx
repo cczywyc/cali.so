@@ -8,17 +8,12 @@ import { SocialLink } from '~/components/links/SocialLink'
 
 const stype = {
     fontFamily: 'monospace',
-    fontSize: '40px'
-}
-
-const itemStype = {
-    fontFamily: 'monospace',
-    fontSize: '35px'
+    fontSize: '30px'
 }
 
 function Hello() {
     return (
-        <span className="group" style={stype}>
+        <span className="group" style={{ fontFamily: 'monospace', fontSize: '40px' }}>
             Hi there, I&apos;m cczywyc👋
         </span>
     )
@@ -26,7 +21,7 @@ function Hello() {
 
 function CurdBoy() {
   return (
-    <span className="group" style={itemStype}>
+    <span className="group" style={stype}>
       <span className="font-mono">&lt;</span>CurdBoy
       <span className="font-mono">&nbsp;/&gt;</span>
       <span className="invisible inline-flex text-zinc-300 before:content-['|'] group-hover:visible group-hover:animate-typing dark:text-zinc-500" />
@@ -36,7 +31,7 @@ function CurdBoy() {
 
 function Gopher() {
   return (
-    <span className="group relative rounded-2xl bg-black/5 p-1 dark:bg-white/5" style={itemStype}>
+    <span className="group relative rounded-2xl bg-black/5 p-1 dark:bg-white/5" style={stype}>
       <span className="pointer-events-none absolute inset-0 border border-lime-700/90 opacity-70 group-hover:border-dashed group-hover:opacity-100 dark:border-lime-400/90">
         <span className="absolute -left-0.5 -top-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
         <span className="absolute -bottom-0.5 -right-0.5 h-1.5 w-1.5 border border-lime-700 bg-zinc-50 dark:border-lime-400" />
@@ -50,7 +45,7 @@ function Gopher() {
 
 function OCD() {
   return (
-    <span className="group" style={itemStype}>
+    <span className="group" style={stype}>
       <SparkleIcon className="mr-1 inline-flex transform-gpu transition-transform duration-500 group-hover:rotate-180" />
       <span>🐳🐳🐳</span>
     </span>
@@ -59,9 +54,9 @@ function OCD() {
 
 function Tosser() {
   return (
-    <span className="group" style={itemStype}>
+    <span className="group" style={stype}>
       <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
-      <span>Focus&nbsp;&nbsp;</span>
+      <span>Focus&nbsp;</span>
       <UserSecurityIcon className="mr-1 inline-flex group-hover:fill-zinc-600/20 dark:group-hover:fill-zinc-200/20" />
       <span>Passion</span>
     </span>

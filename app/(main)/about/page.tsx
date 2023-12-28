@@ -29,36 +29,47 @@ export const metadata = {
 export default function AboutPage() {
     return (
         <Container className="mt-16 sm:mt-24">
-            <header className="max-w-5xl">
+            <header className="max-w-5xl mb-8">
                 <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                     关于我
                 </h1>
-                <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
+            </header>
+            <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 mx-auto mb-8">
+                <p className="my-1 text-base text-zinc-200 dark:text-zinc-400">
                     <Balancer>{AboutMe_1}</Balancer>
                 </p>
-                <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
                     <Balancer>{AboutMe_2}</Balancer>
                 </p>
-                <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
                     <Balancer>{AboutMe_3}</Balancer>
                 </p>
-                <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
                     <Balancer>{AboutMe_4}</Balancer>
                 </p>
-            </header>
-            <header className="max-w-5xl">
+            </div>
+
+            <header className="max-w-5xl mb-8">
                 <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                     关于本站
                 </h1>
-                <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
+            </header>
+            <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 mx-auto mb-8">
+                <p className="my-1 text-base text-zinc-200 dark:text-zinc-400">
                     <Balancer>{AboutWebsite_1}</Balancer>
                 </p>
-                <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
                     <Balancer>{AboutWebsite_2}</Balancer>
                 </p>
-                <p className="my-6 text-base text-zinc-600 dark:text-zinc-400">
+                <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
                     <Balancer>{AboutWebsite_3}</Balancer>
                 </p>
+            </div>
+
+            <header className="max-w-5xl mb-8">
+                <h1 className="text-3xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
+                    一些经历
+                </h1>
             </header>
             <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
                 <Resume/>
