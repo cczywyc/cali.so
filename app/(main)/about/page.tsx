@@ -1,5 +1,4 @@
 import React from "react";
-import Balancer from "react-wrap-balancer";
 
 import {Resume} from "~/app/(main)/Resume";
 import {Container} from '~/components/ui/Container'
@@ -36,16 +35,16 @@ export default function AboutPage() {
             </header>
             <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 mx-auto mb-8">
                 <p className="my-1 text-base text-zinc-200 dark:text-zinc-400">
-                    <Balancer>{AboutMe_1}</Balancer>
+                    {AboutMe_1}
                 </p>
                 <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
-                    <Balancer>{AboutMe_2}</Balancer>
+                    {AboutMe_2}
                 </p>
                 <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
-                    <Balancer>{AboutMe_3}</Balancer>
+                    {AboutMe_3}
                 </p>
                 <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
-                    <Balancer>{AboutMe_4}</Balancer>
+                    {AboutMe_4}
                 </p>
             </div>
 
@@ -56,13 +55,13 @@ export default function AboutPage() {
             </header>
             <div className="rounded-2xl border border-zinc-100 p-6 dark:border-zinc-700/40 mx-auto mb-8">
                 <p className="my-1 text-base text-zinc-200 dark:text-zinc-400">
-                    <Balancer>{AboutWebsite_1}</Balancer>
+                    {AboutWebsite_1}
                 </p>
                 <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
-                    <Balancer>{AboutWebsite_2}</Balancer>
+                    {AboutWebsite_2}
                 </p>
                 <p className="my-5 text-base text-zinc-200 dark:text-zinc-400">
-                    <Balancer>{AboutWebsite_3}</Balancer>
+                    {AboutWebsite_3}
                 </p>
             </div>
 
